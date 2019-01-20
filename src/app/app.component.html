@@ -1,0 +1,13 @@
+
+<!--
+  Code for html input file
+<input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
+<button type="button" (click)="upload()">Upload</button>
+-->
+
+<h2>Custom Upload</h2>
+<p-fileUpload name="file[]" customUpload="true" auto="true"  (uploadHandler)="uploadToServer($event)">
+  
+</p-fileUpload>
+
+<router-outlet></router-outlet>
